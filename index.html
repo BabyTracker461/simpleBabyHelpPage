@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimpleBaby – End User Support</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SimpleBaby – User Help & Support</title>
   <style>
+    :root {
+      --primary: #4e73df;
+      --bg: #f4f6f9;
+      --light: #ffffff;
+      --dark: #333;
+    }
+
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f9fc;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--dark);
     }
+
     header {
-      background-color: #4e73df;
-      color: white;
-      padding: 20px;
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 2rem 1rem;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+    }
+
     main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--light);
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
     }
+
     section {
-      margin-bottom: 40px;
+      margin-bottom: 3rem;
     }
+
     h2 {
-      color: #4e73df;
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
+
     a.button {
-      background-color: #4e73df;
-      color: white;
-      padding: 10px 15px;
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 10px 16px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transition: background-color 0.2s ease;
     }
+
+    a.button:hover {
+      background-color: #3d5ec9;
+    }
+
     .faq-item {
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
     }
+
+    .faq-item strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #e2e6ea;
+      padding: 1rem;
+      background-color: #e9ecef;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>SimpleBaby – User Help & Support</h1>
+    <h1>SimpleBaby – Help & Support</h1>
     <p>Peace of mind in your pocket.</p>
   </header>
 
   <main>
     <section>
       <h2>📘 User Tutorial</h2>
-      <p>You can view or download the full tutorial and onboarding guide here:</p>
+      <p>You can view or download the full tutorial and onboarding guide below:</p>
       <a href="tutorial.pdf" class="button" target="_blank">View Tutorial PDF</a>
     </section>
 
@@ -64,40 +104,55 @@
       <h2>❓ Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <strong>How do I reset my password?</strong><br>
-        Tap “Forgot password” on the login screen and follow the instructions.
+        <strong>Is my data private?</strong>
+        Yes, it is encrypted before being stored, while stored, and during transmission.
       </div>
 
       <div class="faq-item">
-        <strong>Is my data secure?</strong><br>
-        Yes, all logs are encrypted end-to-end before leaving your device.
+        <strong>How do I reset my password?</strong>
+        On the sign-in page, click “Forgot your password” and follow the instructions.
       </div>
 
       <div class="faq-item">
-        <strong>Can I track multiple children?</strong><br>
-        Yes, you can switch or add child profiles from the main dashboard.
+        <strong>How do I delete logs?</strong>
+        Instructions can be found in the tutorial: <a href="tutorial.pdf" target="_blank">View PDF</a>
       </div>
 
       <div class="faq-item">
-        <strong>What should I do if my logs don’t sync?</strong><br>
-        Make sure you're logged in and connected to the internet. Try refreshing.
+        <strong>Can I use an account on multiple devices?</strong>
+        Yes, simply sign in using the same account on each device.
       </div>
 
       <div class="faq-item">
-        <strong>How do I contact support?</strong><br>
-        Email us at: <a href="mailto:simplebaby.support@gmail.com">simplebaby.support@gmail.com</a>
+        <strong>What is guest mode?</strong>
+        Guest mode lets you try the app without creating an account.
+      </div>
+
+      <div class="faq-item">
+        <strong>What should I do if the app isn't working correctly?</strong>
+        Contact support at <a href="mailto:simplebabyhelp@gmail.com">simplebabyhelp@gmail.com</a>.
+      </div>
+
+      <div class="faq-item">
+        <strong>How do I share data?</strong>
+        Currently, the only way to share data is to sign into the same account on another device.
+      </div>
+
+      <div class="faq-item">
+        <strong>Does an edited log also get encrypted?</strong>
+        Yes, edited logs are treated like originals and are encrypted before saving.
       </div>
     </section>
 
     <section>
       <h2>📬 Contact</h2>
-      <p>If you still need help, email us at:</p>
-      <a href="mailto:simplebaby.support@gmail.com" class="button">simplebaby.support@gmail.com</a>
+      <p>Need more help? Reach out to us:</p>
+      <a href="mailto:simplebabyhelp@gmail.com" class="button">simplebabyhelp@gmail.com</a>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 SimpleBaby App Team
+    &copy; 2025 SimpleBaby App Team. All rights reserved.
   </footer>
 
 </body>
